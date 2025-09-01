@@ -1,10 +1,13 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Layout from './pages/Layout';
+import HomePage from './pages/HomePage';
+
 const AppRouter = () => (
   <BrowserRouter>
     <Routes>
       <Route path="/" element={<Layout />}>
         {/* Home 페이지 */}
-        {/* <Route index element={<HomePage />} /> */}
+        <Route index element={<HomePage />} />
         {/* About Us 페이지 */}
         {/* <Route path="/about-us" element={<AboutUsPage />} /> */}
         {/* Partner 페이지 */}
