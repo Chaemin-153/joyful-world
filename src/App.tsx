@@ -1,7 +1,8 @@
 import './App.css';
+import AppRouter from './Router';
 
 function App() {
-  return <div>헤헤</div>;
+  return <AppRouter />;
 }
 
 export default App;
