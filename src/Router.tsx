@@ -3,6 +3,7 @@ import Layout from './pages/Layout';
 import HomePage from './pages/HomePage';
 import PartnerPage from './pages/PartnerPage';
 import BrandStoryPage from './pages/BrandStoryPage';
+import AboutUsPage from './pages/AboutUsPage';
 
 const AppRouter = () => (
   <BrowserRouter>
@@ -11,7 +12,7 @@ const AppRouter = () => (
         {/* Home 페이지 */}
         <Route index element={<HomePage />} />
         {/* About Us 페이지 */}
-        {/* <Route path="/about-us" element={<AboutUsPage />} /> */}
+        <Route path="/about-us" element={<AboutUsPage />} />
         {/* Partner 페이지 */}
         <Route path="/partner" element={<PartnerPage />} />
         {/* Brand Story 페이지 */}
