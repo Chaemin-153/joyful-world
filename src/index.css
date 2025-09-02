@@ -6,7 +6,8 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
-  font: 16px 'Montserrat-Regular';
+  font: 16px 'Montserrat-Regular', 'Montserrat-Medium', 'Montserrat-SemiBold',
+    'Montserrat-Bold';
 }
 
 @theme {
