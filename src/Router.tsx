@@ -2,6 +2,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Layout from './pages/Layout';
 import HomePage from './pages/HomePage';
 import PartnerPage from './pages/PartnerPage';
+import BrandStoryPage from './pages/BrandStoryPage';
 
 const AppRouter = () => (
   <BrowserRouter>
@@ -14,7 +15,7 @@ const AppRouter = () => (
         {/* Partner 페이지 */}
         <Route path="/partner" element={<PartnerPage />} />
         {/* Brand Story 페이지 */}
-        {/* <Route path="/brand-story" element={<BrandStoryPage />} /> */}
+        <Route path="/brand-story" element={<BrandStoryPage />} />
         {/* Product 페이지 */}
         {/* <Route path="/product" element={<ProductPage />} /> */}
         {/* Community 페이지 */}
