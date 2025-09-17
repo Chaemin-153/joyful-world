@@ -1,4 +1,4 @@
-const PartnerPage = () => {
+const ContactPage = () => {
   return (
     <div className="p-10 space-y-20">
       <h1 className="text-6xl text-brown">Partner</h1>
@@ -205,4 +205,4 @@ const PartnerPage = () => {
   );
 };
 
-export default PartnerPage;
+export default ContactPage;

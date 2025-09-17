@@ -1,7 +1,7 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Layout from './pages/Layout';
 import HomePage from './pages/HomePage';
-import PartnerPage from './pages/PartnerPage';
+import ContactPage from './pages/ContactPage';
 import BrandStoryPage from './pages/BrandStoryPage';
 import AboutUsPage from './pages/AboutUsPage';
 import ProductPage from './pages/ProductPage';
@@ -14,8 +14,8 @@ const AppRouter = () => (
         <Route index element={<HomePage />} />
         {/* About Us 페이지 */}
         <Route path="/about-us" element={<AboutUsPage />} />
-        {/* Partner 페이지 */}
-        <Route path="/partner" element={<PartnerPage />} />
+        {/* Contact 페이지 */}
+        <Route path="/contact" element={<ContactPage />} />
         {/* Brand Story 페이지 */}
         <Route path="/brand-story" element={<BrandStoryPage />} />
         {/* Product 페이지 */}

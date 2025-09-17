@@ -9,7 +9,7 @@ function Nav({ to, children }: { to: string; children: React.ReactNode }) {
     <NavLink
       to={to}
       className={({ isActive }) =>
-        `hover:underline ${isActive ? 'font-semibold underline' : ''}`
+        `hover:text-orange ${isActive ? 'font-semibold' : ''}`
       }
     >
       {children}
@@ -40,24 +40,24 @@ const Header = () => {
 
   return (
     <>
-      <header className="fixed top-0 left-0 w-full bg-brown backdrop-blur z-[100] text-white">
+      <header className="fixed top-0 left-0 py-2 w-full bg-brown backdrop-blur z-[100] text-white">
         <div className="mx-auto max-w-6xl px-4 h-16 flex items-center justify-between">
           {/* 로고(Home 버튼) */}
           <Link to="/" className="flex items-center font-bold text-lg">
             <img
               src="/logo_background.png"
               alt="brand_logo"
-              className="h-10 md:h-12 w-auto"
+              className="h-12 md:h-16 w-auto"
             />
           </Link>
 
           {/* 데스크탑: 네비게이션 */}
-          <nav className="hidden md:flex gap-6">
+          <nav className="hidden md:flex md:text-lg gap-6">
             <Nav to="/">Home</Nav>
             <Nav to="/about-us">About Us</Nav>
-            <Nav to="/partner">Partner</Nav>
+            <Nav to="/contact">Contact</Nav>
             <Nav to="/brand-story">Brand Story</Nav>
-            <Nav to="/product">Product</Nav>
+            <Nav to="/product">Products</Nav>
             <Nav to="/community">Community</Nav>
           </nav>
 
