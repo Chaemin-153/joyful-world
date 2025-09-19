@@ -75,8 +75,8 @@ const SidePannel = ({ open, closeAndFocus }: SidePannelProps) => {
           <MobileNav to="/about-us" onNavigate={closeAndFocus}>
             About Us
           </MobileNav>
-          <MobileNav to="/partner" onNavigate={closeAndFocus}>
-            Partner
+          <MobileNav to="/contact" onNavigate={closeAndFocus}>
+            Contact
           </MobileNav>
           <MobileNav to="/brand-story" onNavigate={closeAndFocus}>
             Brand Story
