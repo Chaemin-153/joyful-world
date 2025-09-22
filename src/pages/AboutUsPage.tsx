@@ -2,12 +2,12 @@ const AboutUsPage = () => {
   return (
     <div className="flex flex-col items-center py-8 md:py-12 mb-12 md:mb-32 gap-8 text-brown text-center">
       <img
-        src="wallpaper_background.png"
-        alt="wallpaper_background"
-        className="w-full h-56 md:h-[50vh] object-cover -z-10 absolute top-16"
+        src="wallpaper_background_header.png"
+        alt="wallpaper_background_header"
+        className="w-full h-56 md:h-[32vh] object-cover -z-10 absolute top-16 md:top-24"
       />
       {/* 1. 회사 소개글 */}
-      <div className="flex flex-col gap-12 mt-60 md:mt-128">
+      <div className="flex flex-col gap-12 mt-60 md:mt-100">
         <h1 className="text-3xl md:text-4xl font-bold text-orange">
           지친 일상에 즐거움을 <br className="block md:hidden" />
           선물합니다

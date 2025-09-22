@@ -71,7 +71,7 @@ const BrandStoryPage = () => {
         {/* 와이즈 Section_1 */}
         <div className="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-12 text-center md:text-left">
           <img
-            src="wise_sample1.png"
+            src="wise_sample1.jpg"
             alt="wise_sample1"
             className="w-full md:w-1/2"
           />
@@ -102,7 +102,7 @@ const BrandStoryPage = () => {
             <p>와이즈(WISE)가 함께하겠습니다.</p>
           </div>
           <img
-            src="wise_sample2.png"
+            src="wise_sample2.jpg"
             alt="wise_sample2"
             className="w-full md:w-1/2"
           />
