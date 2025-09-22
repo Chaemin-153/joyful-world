@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import MenuButton from './MenuButton';
 import SidePannel from './SidePannel';
+import LanguageToggle from './LanguageToggle';
 
 // 재사용 Nav 컴포넌트
 function Nav({ to, children }: { to: string; children: React.ReactNode }) {
@@ -40,8 +41,42 @@ const Header = () => {
 
   return (
     <>
-      <header className="fixed top-0 left-0 py-2 w-full bg-brown backdrop-blur z-[100] text-white">
-        <div className="mx-auto max-w-6xl px-4 h-16 flex items-center justify-between">
+      <header className="fixed top-0 left-0 pb-2 w-full bg-brown backdrop-blur z-[100] text-white">
+        {/* Top Header */}
+        <div className="w-full bg-brown-dark hidden md:block">
+          <div className="mx-auto max-w-6xl px-4 h-8 flex items-center justify-end gap-4 text-sm md:text-base text-white">
+            <a
+              href="https://www.instagram.com/joyful_jjam/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-1"
+            >
+              <img
+                src="/fav-instagram.png"
+                alt="instagram"
+                className="w-4 h-4 object-contain"
+              />
+              <span>INSTAGRAM</span>
+            </a>
+            <a
+              href="https://smartstore.naver.com/honeyjjam"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-1"
+            >
+              <img
+                src="/fav-shopping.png"
+                alt="shop"
+                className="w-4 h-4 object-contain"
+              />
+              <span>SHOP</span>
+            </a>
+            <LanguageToggle />
+          </div>
+        </div>
+
+        {/* Main Header */}
+        <div className="mx-auto max-w-6xl pt-2 px-4 h-16 flex items-center justify-between">
           {/* 로고(Home 버튼) */}
           <Link to="/" className="flex items-center font-bold text-lg">
             <img
