@@ -83,6 +83,7 @@ const Header = () => {
               src="/logo_background.png"
               alt="brand_logo"
               className="h-12 md:h-16 w-auto"
+              onClick={closeAndFocus}
             />
           </Link>
 
@@ -99,7 +100,7 @@ const Header = () => {
           {/* 모바일: 햄버거 버튼 */}
           <MenuButton
             open={open}
-            onOpen={() => setOpen(true)}
+            onOpen={() => setOpen(!open)}
             btnRef={btnRef}
           />
         </div>
