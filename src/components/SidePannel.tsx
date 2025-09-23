@@ -35,7 +35,7 @@ const SidePannel = ({ open, closeAndFocus }: SidePannelProps) => {
       {/* ---- 모바일 사이드바 & 오버레이 ---- */}
       {/* 오버레이: 다른 곳 클릭 시 닫힘 */}
       <div
-        className={`md:hidden fixed inset-0 transition-opacity ${
+        className={`md:hidden fixed inset-0 transition-opacity z-50 ${
           open
             ? 'opacity-100 pointer-events-auto'
             : 'opacity-0 pointer-events-none'
@@ -50,7 +50,7 @@ const SidePannel = ({ open, closeAndFocus }: SidePannelProps) => {
         role="dialog"
         aria-modal="true"
         aria-label="Site navigation"
-        className={`md:hidden fixed top-16 right-0 h-dvh w-64 max-w-[85vw] bg-white text-gray-900 shadow-xl border-l transition-transform duration-200 ${
+        className={`md:hidden fixed top-18 right-0 h-dvh w-2/3 max-w-[85vw] bg-white text-gray-900 shadow-xl transition-transform duration-200 z-100 ${
           open ? 'translate-x-0' : 'translate-x-full'
         }`}
         // 패널 내부 클릭 시 오버레이 onClick 버블링 막기
