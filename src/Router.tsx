@@ -5,9 +5,11 @@ import ContactPage from './pages/ContactPage';
 import BrandStoryPage from './pages/BrandStoryPage';
 import AboutUsPage from './pages/AboutUsPage';
 import ProductPage from './pages/ProductPage';
+import ScrollToTop from './components/ScrollToTop';
 
 const AppRouter = () => (
   <BrowserRouter>
+    <ScrollToTop />
     <Routes>
       <Route path="/" element={<Layout />}>
         {/* Home 페이지 */}

@@ -7,7 +7,7 @@ const AboutUsPage = () => {
         className="w-full h-56 md:h-[32vh] object-cover -z-10 absolute top-16 md:top-24"
       />
       {/* 1. 회사 소개글 */}
-      <div className="flex flex-col gap-12 mt-60 md:mt-100">
+      <div className="flex flex-col gap-12 mt-60 md:mt-92">
         <h1 className="text-3xl md:text-4xl font-bold text-orange">
           지친 일상에 즐거움을 <br className="block md:hidden" />
           선물합니다
@@ -59,10 +59,13 @@ const AboutUsPage = () => {
         </div>
       </div>
       {/* 2. Our Value */}
-      <div className="flex flex-col gap-12 mt-12 pt-16 border-t-4 border-dotted border-brown w-full">
+      <div className="flex flex-col gap-12 pt-20 w-full">
         <h1 className="text-4xl md:text-5xl font-bold text-orange">
           Our Value
         </h1>
+        <div className="w-full flex justify-center">
+          <div className="h-[3px] w-20 bg-orange"></div>
+        </div>
         <div className="flex flex-col gap-8">
           <h2 className="text-xl italic">
             “<span className="font-bold">Dear friend</span>,
