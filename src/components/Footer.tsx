@@ -47,8 +47,8 @@ const Footer = () => {
           <Link to="/brand-story" className="underline">
             Brand Story
           </Link>
-          <Link to="/product" className="underline">
-            Product
+          <Link to="/products" className="underline">
+            Products
           </Link>
           <Link to="/community" className="underline">
             Community
