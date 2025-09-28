@@ -6,6 +6,7 @@ import BrandStoryPage from './pages/BrandStoryPage';
 import AboutUsPage from './pages/AboutUsPage';
 import ProductsPage from './pages/ProductsPage';
 import ScrollToTop from './components/ScrollToTop';
+import CommunityPage from './pages/CommunityPage';
 
 const AppRouter = () => (
   <BrowserRouter>
@@ -23,7 +24,7 @@ const AppRouter = () => (
         {/* Product 페이지 */}
         <Route path="/products" element={<ProductsPage />} />
         {/* Community 페이지 */}
-        {/* <Route path="/community" element={<CommunityPage />} /> */}
+        <Route path="/community" element={<CommunityPage />} />
       </Route>
       {/* Not Found */}
     </Routes>
