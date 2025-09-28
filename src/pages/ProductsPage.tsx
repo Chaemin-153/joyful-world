@@ -23,9 +23,11 @@ const ProductsPage = () => {
   const [searchParams, setSearchParams] = useSearchParams();
   const category = searchParams.get('category') ?? 'all';
   const [products, setProducts] = useState<ProductType[]>([]);
+  const [loading, setLoading] = useState(true);
   const storage = getStorage();
 
   const fetchProducts = async () => {
+    setLoading(true);
     try {
       const col = collection(db, 'products');
       const snap = await getDocs(col);
@@ -37,8 +39,12 @@ const ProductsPage = () => {
 
       const withUrls = await Promise.all(
         base.map(async (prod) => {
-          const url = await getDownloadURL(ref(storage, prod.imagePath));
-          return { ...prod, imageUrl: url };
+          try {
+            const url = await getDownloadURL(ref(storage, prod.imagePath));
+            return { ...prod, imageUrl: url };
+          } catch {
+            return prod;
+          }
         })
       );
 
@@ -46,6 +52,8 @@ const ProductsPage = () => {
     } catch (e) {
       console.error('Error fetching products:', e);
       setProducts([]);
+    } finally {
+      setLoading(false);
     }
   };
 
@@ -87,35 +95,54 @@ const ProductsPage = () => {
         ))}
       </div>
 
-      {/* 제품 리스트 */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
-        {list.map((p) => (
-          <div
-            key={p.id}
-            className="flex flex-col items-center border rounded-lg shadow-md overflow-hidden"
-          >
-            {p.imageUrl ? (
-              <img
-                src={p.imageUrl}
-                alt={p.name}
-                className="w-48 p-4"
-                loading="lazy"
-              />
-            ) : (
-              <div className="w-full h-48 bg-brown flex items-center justify-center text-white font-bold">
-                IMAGE
+      {/* 로딩 상태 스켈레톤 */}
+      {loading && (
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+          {Array.from({ length: 6 }).map((_, i) => (
+            <div
+              key={i}
+              className="flex flex-col items-center border rounded-lg shadow-md overflow-hidden animate-pulse"
+            >
+              <div className="w-full h-48 bg-brown/70" />
+              <div className="p-4 w-full space-y-2">
+                <div className="h-4 bg-gray-200 rounded" />
+                <div className="h-3 bg-gray-200 rounded w-2/3" />
               </div>
-            )}
-            <div className="p-4 flex flex-col gap-2 text-center">
-              <h3 className="text-lg font-semibold">{p.name}</h3>
-              <p className="text-sm text-gray-700">{p.description}</p>
             </div>
-          </div>
-        ))}
-      </div>
+          ))}
+        </div>
+      )}
 
+      {/* 제품 리스트 */}
+      {!loading && (
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+          {list.map((p) => (
+            <div
+              key={p.id}
+              className="flex flex-col items-center border rounded-lg shadow-md overflow-hidden"
+            >
+              {p.imageUrl ? (
+                <img
+                  src={p.imageUrl}
+                  alt={p.name}
+                  className="w-48 p-4"
+                  loading="lazy"
+                />
+              ) : (
+                <div className="w-full h-48 bg-brown flex items-center justify-center text-white font-bold">
+                  IMAGE
+                </div>
+              )}
+              <div className="p-4 flex flex-col gap-2 text-center">
+                <h3 className="text-lg font-semibold">{p.name}</h3>
+                <p className="text-sm text-gray-700">{p.description}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      )}
       {/* 빈 리스트 */}
-      {list.length === 0 && (
+      {!loading && list.length === 0 && (
         <p className="text-center text-gray-500 mt-12">
           해당 카테고리의 상품이 없습니다.
         </p>
