@@ -168,5 +168,17 @@
       "wise": "WISE"
     },
     "empty": "No products in this category."
+  },
+
+  "home": {
+    "box1": {
+      "title": "Joyful Jam",
+      "desc": "Offering special gourmet experiences with delicious and joyful desserts"
+    },
+    "box2": {
+      "title": "WISE",
+      "desc": "Supporting smart eating habits with quality ingredients and nutrients"
+    },
+    "link": "Go to Products"
   }
 }
