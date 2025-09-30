@@ -2,24 +2,33 @@ import { db } from '@/lib/firebase';
 import { collection, getDocs } from 'firebase/firestore';
 import { getDownloadURL, getStorage, ref } from 'firebase/storage';
 import { useEffect, useMemo, useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import { useSearchParams } from 'react-router-dom';
+
+type Lang = 'KOR' | 'ENG';
 
 interface ProductType {
   id: string;
-  name: string;
-  description: string;
   categoryId: string;
   imageUrl?: string;
   imagePath?: string;
+
+  nameKOR: string;
+  nameENG: string;
+  descriptionKOR: string;
+  descriptionENG: string;
 }
 
 const CATEGORIES = [
-  { id: 'all', name: '전체' },
-  { id: 'joyful_jam', name: '인생꿀잼' },
-  { id: 'wise', name: '와이즈' },
-];
+  { id: 'all' },
+  { id: 'joyful_jam' },
+  { id: 'wise' },
+] as const;
 
 const ProductsPage = () => {
+  const { t, i18n } = useTranslation('common');
+  const currentLang = (i18n.resolvedLanguage?.toUpperCase() as Lang) || 'KOR';
+
   const [searchParams, setSearchParams] = useSearchParams();
   const category = searchParams.get('category') ?? 'all';
   const [products, setProducts] = useState<ProductType[]>([]);
@@ -39,6 +48,7 @@ const ProductsPage = () => {
 
       const withUrls = await Promise.all(
         base.map(async (prod) => {
+          if (prod.imageUrl || !prod.imagePath) return prod;
           try {
             const url = await getDownloadURL(ref(storage, prod.imagePath));
             return { ...prod, imageUrl: url };
@@ -70,6 +80,13 @@ const ProductsPage = () => {
     }
   };
 
+  const pickLocalized = (prod: ProductType) => {
+    const displayName = currentLang === 'KOR' ? prod.nameKOR : prod.nameENG;
+    const displayDesc =
+      currentLang === 'KOR' ? prod.descriptionKOR : prod.descriptionENG;
+    return { displayName, displayDesc };
+  };
+
   useEffect(() => {
     fetchProducts();
   }, []);
@@ -90,7 +107,7 @@ const ProductsPage = () => {
                 : 'bg-white text-brown border-gray-300 hover:bg-brown hover:text-white'
             }`}
           >
-            {c.name}
+            {t(`products.categories.${c.id}`)}
           </button>
         ))}
       </div>
@@ -114,38 +131,39 @@ const ProductsPage = () => {
       )}
 
       {/* 제품 리스트 */}
-      {!loading && (
+      {!loading && list.length > 0 && (
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
-          {list.map((p) => (
-            <div
-              key={p.id}
-              className="flex flex-col items-center border rounded-lg shadow-md overflow-hidden"
-            >
-              {p.imageUrl ? (
-                <img
-                  src={p.imageUrl}
-                  alt={p.name}
-                  className="w-48 p-4"
-                  loading="lazy"
-                />
-              ) : (
-                <div className="w-full h-48 bg-brown flex items-center justify-center text-white font-bold">
-                  IMAGE
+          {list.map((p) => {
+            const { displayName, displayDesc } = pickLocalized(p);
+            return (
+              <div
+                key={p.id}
+                className="flex flex-col items-center border rounded-lg shadow-md overflow-hidden"
+              >
+                {p.imageUrl ? (
+                  <img
+                    src={p.imageUrl}
+                    alt={displayName || 'Product Image'}
+                    className="w-48 p-4"
+                    loading="lazy"
+                  />
+                ) : (
+                  <div className="w-full h-48 bg-brown flex items-center justify-center text-white font-bold">
+                    IMAGE
+                  </div>
+                )}
+                <div className="p-4 flex flex-col gap-2 text-center">
+                  <h3 className="text-lg font-semibold">{displayName}</h3>
+                  <p className="text-sm text-gray-700">{displayDesc}</p>
                 </div>
-              )}
-              <div className="p-4 flex flex-col gap-2 text-center">
-                <h3 className="text-lg font-semibold">{p.name}</h3>
-                <p className="text-sm text-gray-700">{p.description}</p>
               </div>
-            </div>
-          ))}
+            );
+          })}
         </div>
       )}
       {/* 빈 리스트 */}
       {!loading && list.length === 0 && (
-        <p className="text-center text-gray-500 mt-12">
-          해당 카테고리의 상품이 없습니다.
-        </p>
+        <p className="text-center text-gray-500 mt-12">{t('products.empty')}</p>
       )}
     </div>
   );

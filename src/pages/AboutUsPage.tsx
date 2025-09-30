@@ -1,7 +1,7 @@
 import { Trans, useTranslation } from 'react-i18next';
 
 const AboutUsPage = () => {
-  const { t } = useTranslation('about');
+  const { t } = useTranslation('common');
 
   return (
     <div className="flex flex-col items-center py-8 md:py-12 mb-12 md:mb-32 gap-8 text-brown text-center">
