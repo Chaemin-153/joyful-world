@@ -180,5 +180,16 @@
       "desc": "Supporting smart eating habits with quality ingredients and nutrients"
     },
     "link": "Go to Products"
+  },
+
+  "footer": {
+    "cs_center": "CS Center 0507-1404-6835",
+    "working": "Mon-Fri 10:00 ~ 16:00",
+    "lunch": "Lunch 12:00 ~ 13:00",
+    "holiday": "Closed weekends & holidays",
+    "business_report_number": "Joyful World | Business Registration No. 721-34-01365",
+    "mail_report_number": "Mail-Order Business Report No.2024-Seoul-Gwangjin-1525",
+    "ceo": "CEO Ji-eun Lee",
+    "address": " Address | 4F, Youth Cook Business Center, 294 Achasan-ro, Gwangjin-gu, Seoul, Korea"
   }
 }

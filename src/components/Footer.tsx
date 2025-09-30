@@ -1,6 +1,9 @@
+import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 
 const Footer = () => {
+  const { t } = useTranslation('common');
+
   return (
     <footer className="w-full border-t bg-gray-50">
       <div className="flex flex-col md:flex-row justify-between gap-6 mx-auto max-w-6xl px-4 py-6 text-sm text-brown ">
@@ -32,10 +35,10 @@ const Footer = () => {
           </a>
         </div>
         <div className="flex flex-col gap-2">
-          <div>고객센터 0507-1404-6835</div>
-          <div>월-금 10:00 ~ 16:00</div>
-          <div>점심시간 12:00 ~ 13:00</div>
-          <div>주말 및 공휴일 휴무</div>
+          <div>{t('footer.cs_center')}</div>
+          <div>{t('footer.working')}</div>
+          <div>{t('footer.lunch')}</div>
+          <div>{t('footer.holiday')}</div>
         </div>
         <div className="flex flex-col gap-2">
           <Link to="/about-us" className="underline">
@@ -57,16 +60,16 @@ const Footer = () => {
       </div>
       <div className="mx-auto max-w-6xl px-4 py-6 text-sm text-brown flex flex-col gap-2">
         <span>
-          잼있는 세상 | 사업자등록번호 721-34-01365{' '}
+          {t('footer.business_report_number')}{' '}
           <br className="block md:hidden" />
-          <span className="hidden md:inline">| </span> 통신판매업신고번호 제
-          2024-서울광진-1525 <span className="hidden md:inline">| </span>{' '}
+          <span className="hidden md:inline">|</span>{' '}
+          {t('footer.mail_report_number')}{' '}
+          <span className="hidden md:inline">| </span>{' '}
           <br className="block md:hidden" />
-          대표 이지은
+          {t('footer.ceo')}
         </span>
         <span>
-          주소 | 서울특별시 광진구 아차산로 294 4층 청년쿡비즈니스센터{' '}
-          <span className="hidden md:inline">| </span>
+          {t('footer.address')} <span className="hidden md:inline">| </span>
           <br className="block md:hidden" />
           COPYRIGHT© 잼있는 세상 ALL RIGHT RESERVED.
         </span>
