@@ -4,7 +4,11 @@ import { useTranslation } from 'react-i18next';
 
 type Lang = 'KOR' | 'ENG';
 
-export default function LanguageToggle() {
+export default function LanguageToggle({
+  closeAndFocus,
+}: {
+  closeAndFocus?: () => void;
+}) {
   const [open, setOpen] = useState(false);
   const wrapperRef = useRef<HTMLDivElement>(null);
   const { i18n } = useTranslation();
@@ -48,18 +52,24 @@ export default function LanguageToggle() {
 
       {/* 드롭다운 박스 */}
       {open && (
-        <div className="absolute right-0 mt-1 w-28 bg-white text-brown rounded-md shadow-md border border-gray-200 text-sm overflow-hidden z-50">
+        <div className="absolute md:right-0 -top-22 md:top-6 mt-1 w-28 bg-white text-brown rounded-md shadow-md border border-gray-200 text-sm overflow-hidden z-50">
           <button
             type="button"
             className="w-full px-3 py-2 text-left hover:bg-gray-100"
-            onClick={() => handleSelect('KOR')}
+            onClick={() => {
+              handleSelect('KOR');
+              closeAndFocus?.();
+            }}
           >
             한국어
           </button>
           <button
             type="button"
             className="w-full px-3 py-2 text-left hover:bg-gray-100"
-            onClick={() => handleSelect('ENG')}
+            onClick={() => {
+              handleSelect('ENG');
+              closeAndFocus?.();
+            }}
           >
             English
           </button>
