@@ -25,5 +25,102 @@
       "life_title": "JOYFUL LIFE",
       "life_body": "We infuse the message that <0/>life is valuable into our products and <0/>share it throughout daily life.<0/>We offer a bite of comfort <0/>and moments of joy."
     }
+  },
+  "contact": {
+    "title": "Contact",
+    "email": "joyful_honeyjam@naver.com",
+    "tagline": "We’re looking for partners <0/>to create synergy together",
+
+    "icons": {
+      "shop": "Online/Offline Retail Partnerships",
+      "earth": "Overseas Retail Partnerships",
+      "speaker": "Marketing & Partnerships",
+      "headphone": "Product & Quality Inquiries"
+    },
+
+    "divider": "",
+
+    "recipe_dev": {
+      "title": "Custom Food Recipe Development",
+      "desc": "We provide <0>customized recipes</0> <1/>tailored to your needs, <1/>balancing both marketability and quality.",
+      "process_title": "Development Process",
+      "p1_title": "01. Initial Planning & Pre-Alignment",
+      "p1_list": [
+        "- Identify client needs",
+        "- Align on scope and conditions",
+        "- Contract and define work standards"
+      ],
+      "p2_title": "02. Sample Production & 1–2 Tests",
+      "p2_list": [
+        "- Produce prototypes (samples)",
+        "- Sensory and quality tests (*up to 2 rounds)"
+      ],
+      "p3_title": "03. Finalize & Deliver Recipe",
+      "p3_list": [
+        "- Finalize the recipe",
+        "- Deliver recipe files",
+        "- ODM production upon contract conditions"
+      ]
+    },
+
+    "trust": {
+      "title": "Why You Can Trust Us",
+      "desc": "Throughout development, <3/>we comprehensively consider<1/>the following factors to meet your needs.",
+      "c1": "Product properties<2/>(texture & <1/>shape stability)",
+      "c2": "Trendy taste and <1/>consumer preference",
+      "c3": "Nutrition facts and <1/>labeling standards",
+      "c4": "Ingredient sourcing and <1/>cost structure"
+    },
+
+    "looking": {
+      "title": "We’re Looking for Clients Like These",
+      "c1": "Planning new product lines <1/>using existing ingredients",
+      "c2": "Preparing PB/ODM products <1/>but lacking in-house R&D",
+      "c3": "Seeking end-to-end support—<1/>from early-stage consulting <1/>to recipe delivery"
+    },
+
+    "resume": {
+      "title": "👩‍🔬 Developer Credentials",
+      "list": [
+        "B.S. in Food & Nutrition, Yonsei University",
+        "Licensed Dietitian",
+        "Numerous in-house recipes: jams, baked goods (muffins, madeleines, financiers), energy bars, granola",
+        "Extensive CPG food development experience"
+      ]
+    },
+
+    "cases": {
+      "title": "Case Studies",
+
+      "picky": {
+        "name": "PICKY PICKER",
+        "chip": "Healthy Snack R&D",
+        "sec1_title": "Key Products",
+        "sec1_body": "Black ginseng",
+        "sec2_title": "Objective",
+        "sec2_body": "Establish a healthy snack lineup<3/>using ginseng as a functional ingredient",
+        "sec3_title": "Outcome",
+        "sec3_list": [
+          "Premium cookie recipe featuring ginseng<3/>(ginseng + nuts)",
+          "High-protein nut bar recipe"
+        ],
+        "quote": "“We transformed the deep nutrition of ginseng into a trendy format that the younger generation can enjoy conveniently.”"
+      },
+
+      "achim": {
+        "name": "ACHIMIDANG <1/>(Achimidang)",
+        "chip": "Gluten-free Desserts",
+        "sec1_title": "Key Products",
+        "sec1_body": "Four artisanal jams",
+        "sec2_title": "Objective",
+        "sec2_body": "Productize gluten-free desserts <1/>using jam as the main ingredient",
+        "sec3_title": "Outcome",
+        "sec3_list": [
+          "Rice madeleine recipe using jams",
+          "Rice financier recipe using jam ingredients <3/>designed and finalized"
+        ],
+        "quote": "“Reflecting brand direction, <0/>channel customer needs, <0/>and the gluten-free trend, <1/>we selected optimal ingredients <0/>and planned a premium dessert line.”"
+      }
+    }
   }
 }
