@@ -1,0 +1,195 @@
+{
+  "about": {
+    "hero": {
+      "title1": "We bring joy <0/>to your busy day <0/>as a gift",
+      "title2": "With healthy and delicious dining experiences,<3/>we add <0>JOY</0> <3/>This is Joyful World"
+    },
+    "b2c": {
+      "title": "(B2C) <1/>Ready-to-eat <1/>meals & snacks specialist",
+      "body": "All our products are made with <0>natural ingredients </0><1/>and <2>in-house developed recipes</2>.<3/>Our food experts craft them with care<1/>to deliver healthy, delicious joy."
+    },
+    "b2b": {
+      "title": "(B2B) <1/>Custom food recipes <1/>specialist",
+      "body": "We create <0>customized recipes</0> to balance marketability and quality, <1/>tailored to your requests.<3/>From planning to sample tests, <1/>through finalization, <1/><2>nutrition experts</2> manage the whole process."
+    },
+    "value": {
+      "heading": "Our Value",
+      "quote": "“<0>Dear friend</0>, <1/>I pray that you may enjoy <2>good health</2><1/> and that <3>all may go well with you</3>,<4/>even as your soul is getting along well.”",
+      "body": "<0>JOYFUL WORLD</0> sincerely wishes every customer<1/>to <2>prosper in all things and be in good health</2>.<3/>We make our products with wholehearted care and sincerity."
+    },
+    "boxes": {
+      "wellbeing_title": "JOYFUL Well-Being",
+      "wellbeing_body": "For worry-free enjoyment,<3/>we insist on <0>natural ingredients</0>,<3/>thoroughly controlled <1>hygiene facilities</1>,<3/>and uncompromising <2>quality control</2>.<3/>",
+      "flavor_title": "JOYFUL FLAVOR",
+      "flavor_body": "To deliver <0>joyful dining experiences</0>, <3/>we continuously research <1/>and develop products.<1/>With consistent taste and quality, <1/>we bring the joy of flavor.",
+      "life_title": "JOYFUL LIFE",
+      "life_body": "We infuse the message that <0/>life is valuable into our products and <0/>share it throughout daily life.<0/>We offer a bite of comfort <0/>and moments of joy."
+    }
+  },
+  "contact": {
+    "title": "Contact",
+    "email": "joyful_honeyjam@naver.com",
+    "tagline": "We’re looking for partners <0/>to create synergy together",
+
+    "icons": {
+      "shop": "Online/Offline Retail Partnerships",
+      "earth": "Overseas Retail Partnerships",
+      "speaker": "Marketing & Partnerships",
+      "headphone": "Product & Quality Inquiries"
+    },
+
+    "divider": "",
+
+    "recipe_dev": {
+      "title": "Custom Food Recipe Development",
+      "desc": "We provide <0>customized recipes</0> <1/>tailored to your needs, <1/>balancing both marketability and quality.",
+      "process_title": "Development Process",
+      "p1_title": "01. Initial Planning & Pre-Alignment",
+      "p1_list": [
+        "- Identify client needs",
+        "- Align on scope and conditions",
+        "- Contract and define work standards"
+      ],
+      "p2_title": "02. Sample Production & 1–2 Tests",
+      "p2_list": [
+        "- Produce prototypes (samples)",
+        "- Sensory and quality tests (*up to 2 rounds)"
+      ],
+      "p3_title": "03. Finalize & Deliver Recipe",
+      "p3_list": [
+        "- Finalize the recipe",
+        "- Deliver recipe files",
+        "- ODM production upon contract conditions"
+      ]
+    },
+
+    "trust": {
+      "title": "Why You Can Trust Us",
+      "desc": "Throughout development, <3/>we comprehensively consider<1/>the following factors to meet your needs.",
+      "c1": "Product properties<2/>(texture & <1/>shape stability)",
+      "c2": "Trendy taste and <1/>consumer preference",
+      "c3": "Nutrition facts and <1/>labeling standards",
+      "c4": "Ingredient sourcing and <1/>cost structure"
+    },
+
+    "looking": {
+      "title": "We’re Looking for Clients Like These",
+      "c1": "Planning new product lines <1/>using existing ingredients",
+      "c2": "Preparing PB/ODM products <1/>but lacking in-house R&D",
+      "c3": "Seeking end-to-end support—<1/>from early-stage consulting <1/>to recipe delivery"
+    },
+
+    "resume": {
+      "title": "👩‍🔬 Developer Credentials",
+      "list": [
+        "B.S. in Food & Nutrition, Yonsei University",
+        "Licensed Dietitian",
+        "Numerous in-house recipes: jams, baked goods (muffins, madeleines, financiers), energy bars, granola",
+        "Extensive CPG food development experience"
+      ]
+    },
+
+    "cases": {
+      "title": "Case Studies",
+
+      "picky": {
+        "name": "PICKY PICKER",
+        "chip": "Healthy Snack R&D",
+        "sec1_title": "Key Products",
+        "sec1_body": "Black ginseng",
+        "sec2_title": "Objective",
+        "sec2_body": "Establish a healthy snack lineup<3/>using ginseng as a functional ingredient",
+        "sec3_title": "Outcome",
+        "sec3_list": [
+          "Premium cookie recipe featuring ginseng<3/>(ginseng + nuts)",
+          "High-protein nut bar recipe"
+        ],
+        "quote": "“We transformed the deep nutrition of ginseng into a trendy format that the younger generation can enjoy conveniently.”"
+      },
+
+      "achim": {
+        "name": "ACHIMIDANG <1/>(Achimidang)",
+        "chip": "Gluten-free Desserts",
+        "sec1_title": "Key Products",
+        "sec1_body": "Four artisanal jams",
+        "sec2_title": "Objective",
+        "sec2_body": "Productize gluten-free desserts <1/>using jam as the main ingredient",
+        "sec3_title": "Outcome",
+        "sec3_list": [
+          "Rice madeleine recipe using jams",
+          "Rice financier recipe using jam ingredients <3/>designed and finalized"
+        ],
+        "quote": "“Reflecting brand direction, <0/>channel customer needs, <0/>and the gluten-free trend, <1/>we selected optimal ingredients <0/>and planned a premium dessert line.”"
+      }
+    }
+  },
+
+  "brand": {
+    "lifejam": {
+      "section1": {
+        "quote": "“Be joyful always”",
+        "lead": "We gift joy to everyday life.<3/>Have a ‘Honey-Joy’ day today :)",
+        "p1": "“Life just isn’t fun…”<3/>A friend once sighed, and <1/>those words stayed with us.",
+        "p2": "So we asked ourselves:<3/><0>‘Could we make this precious life</0> <1/><0>feel a little nicer?’</0>",
+        "p3": "<0>Honey-Joy</0> was born from a desire<3/>to add sweet comfort and warm messages <1/>to the everyday moments of life."
+      },
+      "section2": {
+        "title": "🧡 A message to the young generation",
+        "lines": [
+          "“Our lives are precious and valuable.”",
+          "We hope honey-sweet moments in life",
+          "come a little more often and more clearly,",
+          "and with that hope,",
+          "<0>Honey-Joy</0> will cheer you on."
+        ]
+      }
+    },
+    "wise": {
+      "section1": {
+        "quote": "“Live not as unwise but as wise”",
+        "lead": "Smart habits for smart people",
+        "body": "For those pursuing a wise lifestyle, <3/>WISE proposes meal-replacement snacks considering <0>convenience, nutrition, and taste</0> altogether, <3/>with <0>smart, satisfying choices</0>."
+      },
+      "section2": {
+        "lines": [
+          "So that your day",
+          "is filled with smarter choices,",
+          "WISE will be with you."
+        ]
+      }
+    }
+  },
+
+  "products": {
+    "title": "Products",
+    "categories": {
+      "all": "All",
+      "joyful_jam": "Joyful Jam",
+      "wise": "WISE"
+    },
+    "empty": "No products in this category."
+  },
+
+  "home": {
+    "box1": {
+      "title": "Joyful Jam",
+      "desc": "Offering special gourmet experiences with delicious and joyful desserts"
+    },
+    "box2": {
+      "title": "WISE",
+      "desc": "Supporting smart eating habits with quality ingredients and nutrients"
+    },
+    "link": "Go to Products"
+  },
+
+  "footer": {
+    "cs_center": "CS Center 0507-1404-6835",
+    "working": "Mon-Fri 10:00 ~ 16:00",
+    "lunch": "Lunch 12:00 ~ 13:00",
+    "holiday": "Closed weekends & holidays",
+    "business_report_number": "Joyful World | Business Registration No. 721-34-01365",
+    "mail_report_number": "Mail-Order Business Report No.2024-Seoul-Gwangjin-1525",
+    "ceo": "CEO Ji-eun Lee",
+    "address": " Address | 4F, Youth Cook Business Center, 294 Achasan-ro, Gwangjin-gu, Seoul, Korea"
+  }
+}
