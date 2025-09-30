@@ -1,10 +1,14 @@
 import { useState, useRef, useEffect } from 'react';
 import { ChevronDown } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
+
+type Lang = 'KOR' | 'ENG';
 
 export default function LanguageToggle() {
   const [open, setOpen] = useState(false);
-  const [lang, setLang] = useState<'KOR' | 'ENG'>('KOR'); // 현재 언어 상태
   const wrapperRef = useRef<HTMLDivElement>(null);
+  const { i18n } = useTranslation();
+  const lang = (i18n.resolvedLanguage as Lang) || 'KOR';
 
   // 외부 클릭 시 닫힘
   useEffect(() => {
@@ -20,8 +24,9 @@ export default function LanguageToggle() {
     return () => document.removeEventListener('mousedown', handleClickOutside);
   }, []);
 
-  const handleSelect = (value: 'KOR' | 'ENG') => {
-    setLang(value);
+  const handleSelect = async (value: Lang) => {
+    await i18n.changeLanguage(value);
+    localStorage.setItem('app.lang', value);
     setOpen(false);
   };
 

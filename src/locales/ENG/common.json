@@ -1,0 +1,29 @@
+{
+  "about": {
+    "hero": {
+      "title1": "We bring joy <0/>to your busy day <0/>as a gift",
+      "title2": "With healthy and delicious dining experiences,<3/>we add <0>JOY</0> <3/>This is Joyful World"
+    },
+    "b2c": {
+      "title": "(B2C) <1/>Ready-to-eat <1/>meals & snacks specialist",
+      "body": "All our products are made with <0>natural ingredients </0><1/>and <2>in-house developed recipes</2>.<3/>Our food experts craft them with care<1/>to deliver healthy, delicious joy."
+    },
+    "b2b": {
+      "title": "(B2B) <1/>Custom food recipes <1/>specialist",
+      "body": "We create <0>customized recipes</0> to balance marketability and quality, <1/>tailored to your requests.<3/>From planning to sample tests, <1/>through finalization, <1/><2>nutrition experts</2> manage the whole process."
+    },
+    "value": {
+      "heading": "Our Value",
+      "quote": "“<0>Dear friend</0>, <1/>I pray that you may enjoy <2>good health</2><1/> and that <3>all may go well with you</3>,<4/>even as your soul is getting along well.”",
+      "body": "<0>JOYFUL WORLD</0> sincerely wishes every customer<1/>to <2>prosper in all things and be in good health</2>.<3/>We make our products with wholehearted care and sincerity."
+    },
+    "boxes": {
+      "wellbeing_title": "JOYFUL Well-Being",
+      "wellbeing_body": "For worry-free enjoyment,<3/>we insist on <0>natural ingredients</0>,<3/>thoroughly controlled <1>hygiene facilities</1>,<3/>and uncompromising <2>quality control</2>.<3/>",
+      "flavor_title": "JOYFUL FLAVOR",
+      "flavor_body": "To deliver <0>joyful dining experiences</0>, <3/>we continuously research <1/>and develop products.<1/>With consistent taste and quality, <1/>we bring the joy of flavor.",
+      "life_title": "JOYFUL LIFE",
+      "life_body": "We infuse the message that <0/>life is valuable into our products and <0/>share it throughout daily life.<0/>We offer a bite of comfort <0/>and moments of joy."
+    }
+  }
+}
