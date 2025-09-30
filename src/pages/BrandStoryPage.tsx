@@ -1,4 +1,17 @@
+import { Trans, useTranslation } from 'react-i18next';
+
 const BrandStoryPage = () => {
+  const { t } = useTranslation('common');
+
+  // 섹션2의 bullet/문장 나열형은 배열로 받아오기
+  const lifejamLines = t('brand.lifejam.section2.lines', {
+    returnObjects: true,
+  }) as string[];
+
+  const wiseLines = t('brand.wise.section2.lines', {
+    returnObjects: true,
+  }) as string[];
+
   return (
     <div className="flex flex-col items-center my-12 md:my-24 px-4 gap-16 text-brown">
       {/* 1. 인생꿀잼 */}
@@ -12,32 +25,50 @@ const BrandStoryPage = () => {
           />
           <div className="w-full md:w-1/2 flex flex-col gap-6">
             <blockquote className="text-xl md:text-2xl font-bold italic text-orange">
-              “Be joyful always”
+              {t('brand.lifejam.section1.quote')}
             </blockquote>
+
             <p className="text-base md:text-lg font-bold">
-              일상에 즐거움을 선물합니다.
-              <br />
-              오늘 하루도 인생꿀잼하세요 :)
+              <Trans
+                i18nKey="brand.lifejam.section1.lead"
+                components={[<></>, <></>, <></>, <br />]} // <3/>
+              />
             </p>
+
             <p>
-              “인생이 재미없다…”
-              <br />
-              어느 날 친구의 푸념 같은 말이, <br className="block md:hidden" />
-              깊이 마음에 남았습니다.
+              <Trans
+                i18nKey="brand.lifejam.section1.p1"
+                components={[
+                  <></>, // <0> 미사용
+                  <br className="block md:hidden" />, // <1/>
+                  <></>,
+                  <br />, // <3/>
+                ]}
+              />
             </p>
+
             <p>
-              그 말에 우리는 질문을 던졌습니다.
-              <br />
-              <span className="font-bold">
-                ‘소중한 인생을 조금 더 기분 좋게 만들 수는 없을까?’
-              </span>
+              <Trans
+                i18nKey="brand.lifejam.section1.p2"
+                components={[
+                  <span className="font-bold" />, // <0>
+                  <br className="block md:hidden" />, // <1/>
+                  <></>,
+                  <br />, // <3/>
+                ]}
+              />
             </p>
+
             <p className="font-bold">
-              인생꿀잼은 삶의 매일에
-              <br />
-              달콤한 위로와 따뜻한 메시지를 <br className="block md:hidden" />
-              더하고 싶은 마음에서 <br className="hidden md:block" />
-              시작되었습니다.
+              <Trans
+                i18nKey="brand.lifejam.section1.p3"
+                components={[
+                  <span className="text-orange" />, // <0> 인생꿀잼/ Honey-Joy
+                  <br className="block md:hidden" />, // <1/>
+                  <br className="hidden md:block" />, // <2/>
+                  <br />, // <3/>
+                ]}
+              />
             </p>
           </div>
         </div>
@@ -46,18 +77,20 @@ const BrandStoryPage = () => {
         <div className="flex flex-col-reverse md:flex-row items-center justify-center gap-8 md:gap-12 text-center md:text-left">
           <div className="w-full md:w-1/2 flex flex-col gap-6">
             <h2 className="text-xl md:text-2xl font-bold text-orange">
-              🧡 청년세대에게 전하고 싶은 메시지
+              {t('brand.lifejam.section2.title')}
             </h2>
             <div className="flex flex-col gap-2 font-bold">
-              <p>“우리의 인생은 소중하고 가치 있습니다.”</p>
-              <p>그리고 그 인생에 꿀처럼 달콤한 순간들이</p>
-              <p>조금 더 자주, 조금 더 선명하게</p>
-              <p>찾아오기를 바라는 마음으로,</p>
-              <p>
-                <span className="text-orange">인생꿀잼</span>이 응원하겠습니다.
-              </p>
+              {lifejamLines.map((line, i) => (
+                <p key={i}>
+                  <Trans
+                    i18nKey={`brand.lifejam.section2.lines.${i}`}
+                    components={[<span className="text-orange" />]}
+                  />
+                </p>
+              ))}
             </div>
           </div>
+
           <img
             src="jam_sample2.png"
             alt="jam_sample2"
@@ -77,30 +110,35 @@ const BrandStoryPage = () => {
           />
           <div className="w-full md:w-1/2 flex flex-col gap-6">
             <blockquote className="text-xl md:text-2xl font-bold italic text-orange">
-              “Live not as unwise but as wise”
+              {t('brand.wise.section1.quote')}
             </blockquote>
+
             <p className="text-base md:text-lg font-bold">
-              똑똑한 이들을 위한, 똑똑한 습관
+              {t('brand.wise.section1.lead')}
             </p>
+
             <p>
-              와이즈(WISE)는 <br className="block md:hidden" />
-              지혜로운 라이프스타일을 추구하는 이들을 위해
-              <br />
-              <span className="font-bold">간편함, 영양, 맛 </span>
-              모두를 고려한
-              <br className="block md:hidden" />
-              <span className="font-bold"> 식사 대용 간식</span>을 제안합니다.
+              <Trans
+                i18nKey="brand.wise.section1.body"
+                components={[
+                  <span className="font-bold" />, // <0>간편함, 영양, 맛 / smart choices
+                  <br className="block md:hidden" />, // <1/>
+                  <></>,
+                  <br />, // <3/>
+                ]}
+              />
             </p>
           </div>
         </div>
 
-        {/* 와이즈 Section_2 (모바일 세로, 데스크탑 우측 이미지) */}
+        {/* 와이즈 Section_2 */}
         <div className="flex flex-col-reverse md:flex-row items-center justify-between gap-8 md:gap-12 text-center md:text-left">
           <div className="w-full md:w-1/2 flex flex-col gap-2 md:gap-4 font-bold">
-            <p>똑똑한 당신의 하루가</p>
-            <p>똑똑한 선택으로 채워질 수 있도록,</p>
-            <p>와이즈(WISE)가 함께하겠습니다.</p>
+            {wiseLines.map((line, i) => (
+              <p key={i}>{line}</p>
+            ))}
           </div>
+
           <img
             src="wise_sample2.jpg"
             alt="wise_sample2"

@@ -122,5 +122,41 @@
         "quote": "“Reflecting brand direction, <0/>channel customer needs, <0/>and the gluten-free trend, <1/>we selected optimal ingredients <0/>and planned a premium dessert line.”"
       }
     }
+  },
+
+  "brand": {
+    "lifejam": {
+      "section1": {
+        "quote": "“Be joyful always”",
+        "lead": "We gift joy to everyday life.<3/>Have a ‘Honey-Joy’ day today :)",
+        "p1": "“Life just isn’t fun…”<3/>A friend once sighed, and <1/>those words stayed with us.",
+        "p2": "So we asked ourselves:<3/><0>‘Could we make this precious life</0> <1/><0>feel a little nicer?’</0>",
+        "p3": "<0>Honey-Joy</0> was born from a desire<3/>to add sweet comfort and warm messages <1/>to the everyday moments of life."
+      },
+      "section2": {
+        "title": "🧡 A message to the young generation",
+        "lines": [
+          "“Our lives are precious and valuable.”",
+          "We hope honey-sweet moments in life",
+          "come a little more often and more clearly,",
+          "and with that hope,",
+          "<0>Honey-Joy</0> will cheer you on."
+        ]
+      }
+    },
+    "wise": {
+      "section1": {
+        "quote": "“Live not as unwise but as wise”",
+        "lead": "Smart habits for smart people",
+        "body": "For those pursuing a wise lifestyle, <3/>WISE proposes meal-replacement snacks considering <0>convenience, nutrition, and taste</0> altogether, <3/>with <0>smart, satisfying choices</0>."
+      },
+      "section2": {
+        "lines": [
+          "So that your day",
+          "is filled with smarter choices,",
+          "WISE will be with you."
+        ]
+      }
+    }
   }
 }
