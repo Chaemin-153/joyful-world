@@ -80,7 +80,7 @@ const BrandStoryPage = () => {
               {t('brand.lifejam.section2.title')}
             </h2>
             <div className="flex flex-col gap-2 font-bold">
-              {lifejamLines.map((line, i) => (
+              {lifejamLines.map((_, i) => (
                 <p key={i}>
                   <Trans
                     i18nKey={`brand.lifejam.section2.lines.${i}`}
@@ -134,8 +134,8 @@ const BrandStoryPage = () => {
         {/* 와이즈 Section_2 */}
         <div className="flex flex-col-reverse md:flex-row items-center justify-between gap-8 md:gap-12 text-center md:text-left">
           <div className="w-full md:w-1/2 flex flex-col gap-2 md:gap-4 font-bold">
-            {wiseLines.map((line, i) => (
-              <p key={i}>{line}</p>
+            {wiseLines.map((_, i) => (
+              <p key={i}>{_}</p>
             ))}
           </div>
 
