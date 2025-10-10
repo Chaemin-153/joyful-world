@@ -9,42 +9,40 @@
 
 - **배포 링크:** [https://joyful-world.co.kr](https://joyful-world.co.kr)
 - **페이지 예시:**
-
-1. HomePage(KOR)
 <table>
   <tr>
     <td>
-      <div align="center"><sub>Home(KOR)</sub></div>
+      <div align="start"><sub>Home(KOR)</sub></div>
       <img width="100%" alt="home_kor" src="https://github.com/user-attachments/assets/613a579f-55a5-461b-82c5-af3be8b945ee" />
     </td>
     <td>
-      <div align="center"><sub>Home(ENG)</sub></div>
+      <div align="start"><sub>Home(ENG)</sub></div>
       <img width="100%" alt="home_eng" src="https://github.com/user-attachments/assets/1198114a-a752-41da-aa73-dc0745d37cca" />
     </td>
   </tr>
   <tr>
     <td> 
-      <div align="center"><sub>AboutUs Page</sub></div>
-      <img width="100%" alt="about-us" src="https://github.com/user-attachments/assets/e8f3e429-65c5-4d15-be89-5336a84f914f" />
+      <div align="start"><sub>BrandStory Page</sub></div>
+      <img width="100%" alt="brand-story" src="https://github.com/user-attachments/assets/2199f522-dee5-4906-a9d7-84d12b7da5dc" />
     </td>
     <td>
-      <div align="center"><sub>Contact Page</sub></div>
+      <div align="start"><sub>Contact Page</sub></div>
       <img width="100%" alt="contact" src="https://github.com/user-attachments/assets/a6da95be-16be-416b-81b4-978dda630144" />
     </td>
   </tr>
   <tr>
     <td>
-      <div align="center"><sub>BrandStory Page</sub></div>
-      <img width="100%" alt="brand-story" src="https://github.com/user-attachments/assets/2199f522-dee5-4906-a9d7-84d12b7da5dc" />
+      <div align="start"><sub>AboutUs Page</sub></div>
+      <img width="100%" alt="about-us" src="https://github.com/user-attachments/assets/e8f3e429-65c5-4d15-be89-5336a84f914f" />
     </td>
     <td>
-      <div align="center"><sub>Products Page</sub></div>
+      <div align="start"><sub>Products Page</sub></div>
       <img width="100%" alt="products" src="https://github.com/user-attachments/assets/f77f58ee-b150-495d-945d-d258d6d449fe" />
     </td>
   </tr>
   <tr>
     <td>
-      <div align="center"><sub>Community Page</sub></div>
+      <div align="start"><sub>Community Page</sub></div>
       <img width="100%" alt="community" src="https://github.com/user-attachments/assets/d5124757-1126-4c49-b004-93bfcb4ff5f5" />
     </td>
   </tr>
