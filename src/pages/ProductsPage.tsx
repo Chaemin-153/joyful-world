@@ -144,7 +144,7 @@ const ProductsPage = () => {
                   <img
                     src={p.imageUrl}
                     alt={displayName || 'Product Image'}
-                    className="w-48 p-4"
+                    className="h-48 p-4"
                     loading="lazy"
                   />
                 ) : (

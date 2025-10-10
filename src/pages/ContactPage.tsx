@@ -25,9 +25,7 @@ const ContactPage = () => {
         <p className="text-brown">
           <Trans
             i18nKey="contact.tagline"
-            components={[
-              <br className="block md:hidden" />, // <0/>
-            ]}
+            components={[<br className="block md:hidden" />]}
           />
         </p>
 
@@ -279,8 +277,13 @@ const ContactPage = () => {
         {/* === Case: PICKY PICKER === */}
         <article className="w-full rounded-2xl border border-brown/30 bg-white shadow-sm overflow-hidden">
           {/* Header */}
-          <div className="flex items-center justify-between px-6 py-4 bg-brown/5">
+          <div className="flex items-center justify-between px-6 pt-4 bg-brown/5">
             <div className="flex items-center gap-3">
+              <img
+                src="logo_picky.png"
+                alt="logo_pickypicker"
+                className="w-16"
+              />
               <h3 className="text-2xl font-semibold text-brown">
                 {t('contact.cases.picky.name')}
               </h3>
@@ -341,20 +344,21 @@ const ContactPage = () => {
           </blockquote>
         </article>
 
-        {/* === Case: ACHIMIDANG === */}
+        {/* === Case: Locial Company === */}
         <article className="w-full rounded-2xl border border-brown/30 bg-white shadow-sm overflow-hidden">
           {/* Header */}
-          <div className="flex items-center justify-between px-6 py-4 bg-brown/5">
+          <div className="flex items-center justify-between px-6 pt-4 bg-brown/5">
             <div className="flex items-center gap-3">
+              <img src="logo_locial.png" alt="logo_locial" className="w-16" />
               <h3 className="text-2xl font-semibold text-brown">
                 <Trans
-                  i18nKey="contact.cases.achim.name"
+                  i18nKey="contact.cases.locial.name"
                   components={[<br className="block md:hidden" />]}
                 />
               </h3>
             </div>
             <span className="inline-flex items-center rounded-full bg-orange/10 text-orange px-3 py-1 text-xs font-semibold">
-              {t('contact.cases.achim.chip')}
+              {t('contact.cases.locial.chip')}
             </span>
           </div>
 
@@ -363,19 +367,19 @@ const ContactPage = () => {
             {/* 주요 제품 */}
             <div className="rounded-xl border border-brown/20">
               <h4 className="border-b-2 border-brown/20 p-4 font-bold text-brown">
-                {t('contact.cases.achim.sec1_title')}
+                {t('contact.cases.locial.sec1_title')}
               </h4>
-              <div className="p-4">{t('contact.cases.achim.sec1_body')}</div>
+              <div className="p-4">{t('contact.cases.locial.sec1_body')}</div>
             </div>
 
             {/* 개발 목표 */}
             <div className="rounded-xl border border-brown/20">
               <h4 className="border-b-2 border-brown/20 p-4 font-bold text-brown">
-                {t('contact.cases.achim.sec2_title')}
+                {t('contact.cases.locial.sec2_title')}
               </h4>
               <div className="p-4">
                 <Trans
-                  i18nKey="contact.cases.achim.sec2_body"
+                  i18nKey="contact.cases.locial.sec2_body"
                   components={[<br />]}
                 />
               </div>
@@ -384,14 +388,14 @@ const ContactPage = () => {
             {/* 개발 결과 */}
             <div className="rounded-xl border border-brown/20 text-left">
               <h4 className="border-b-2 border-brown/20 p-4 font-bold text-brown text-center">
-                {t('contact.cases.achim.sec3_title')}
+                {t('contact.cases.locial.sec3_title')}
               </h4>
               <ul className="p-4 space-y-2 list-disc list-inside">
-                {useTArray()('contact.cases.achim.sec3_list').map(
+                {useTArray()('contact.cases.locial.sec3_list').map(
                   (_, idx: number) => (
                     <li key={idx}>
                       <Trans
-                        i18nKey={`contact.cases.achim.sec3_list.${idx}`}
+                        i18nKey={`contact.cases.locial.sec3_list.${idx}`}
                         components={[<br />]}
                       />
                     </li>
@@ -405,7 +409,7 @@ const ContactPage = () => {
           <blockquote className="px-6 pb-6">
             <p className="text-orange font-bold text-center">
               <Trans
-                i18nKey="contact.cases.achim.quote"
+                i18nKey="contact.cases.locial.quote"
                 components={[<br className="block md:hidden" />, <br />]}
               />
             </p>
